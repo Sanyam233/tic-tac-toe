@@ -12,7 +12,7 @@ export const SocketProvider = (props) => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const newSocket = io("http://localhost:5000");
+        const newSocket = io("https://tic-tac-toe-0001.herokuapp.com/");
         setSocket(newSocket);
         return () => newSocket.close();
     }, []);
