@@ -1,0 +1,83 @@
+.game-stopper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.game-row {
+  display: flex;
+}
+
+.game-row-cell {
+  width: 1.32em;
+  height: 1.32em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+.tac {
+  color: #419fd0;
+}
+
+.tac::after {
+  content: "X";
+}
+
+.tic {
+  color: #76cddd;
+}
+
+.tic::after {
+  content: "O";
+}
+
+.game-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width : 80%;
+  max-width : 350px;
+  margin-bottom: 4em;
+  font-size : 0.9rem;
+}
+
+.current-player-holder {
+  padding : 0.75em;
+  width : 8.75em;
+  max-width: 140px;
+  text-align : center;
+  border-radius: 40px;
+  border : 3px solid #76cddd;
+  color : #76cddd;
+  margin : 0 1.5em;
+  font-weight: bold;
+  background-color : transparent;
+
+}
+
+@media screen and (min-width : 360px) {
+
+  .game-row-cell {
+    font-size: 5rem;
+  }
+
+}
+
+@media screen and (min-width : 720px) {
+
+  .game-row-cell {
+    font-size: 8rem;
+  }  
+
+  .game-bar {
+    font-size : 1rem;
+  }
+  
+}
